@@ -5,10 +5,10 @@ Very simple, fast and lightweight (> 3K) jquery plugin for bootstrap to render n
 ## Usage
 
 ```javascript
-$(SELECTOR).bootstrapSpin({
+$(SELECTOR).bootstrapNumber({
 	upClass: success/primary/danger/warning/default,
 	downClass: success/primary/danger/warning/default
 });
 ```
 
-Checkout here for [demo](http://wpic.bitbucket.org/bootstrap-spin/sample.html)
+Checkout here for [demo](http://wpic.bitbucket.org/bootstrap-number-input/sample.html)
