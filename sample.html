@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js" lang='en'>
+<head>
+    <title>Sample bootstrap-switch</title>
+
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<style>
+		body {
+			padding-top: 2em;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<form>
+				<fieldset>
+					<div class="form-group">
+						<label class="control-label">Before:</label>
+						<input class="form-control" type="number" value="1" min="1" max="10" />
+					</div>
+					<div class="form-group">
+						<label class="control-label">After:</label>
+						<input id="after" class="form-control" type="number" value="1" min="1" max="10" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js" ></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" ></script>
+<script src="bootstrap-spin.js" ></script>
+<script>
+// Remember set you events before call bootstrapSwitch or they will fire after bootstrapSwitch's events
+$("[name='checkbox2']").change(function() {
+	if(!confirm('Do you wanna cancel me!')) {
+		this.checked = true;
+	}
+});
+
+$('#after').bootstrapSpin();
+</script>
+
+
+</body>
+</html>
+
