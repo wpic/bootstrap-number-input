@@ -5,7 +5,7 @@ Very simple, fast and lightweight (> 3K) jquery plugin for bootstrap to render n
 ## Usage
 
 ```javascript
-$(SELECTOR).bootstrapSwitch({
+$(SELECTOR).bootstrapSpin({
 	upClass: success/primary/danger/warning/default,
 	downClass: success/primary/danger/warning/default
 });
