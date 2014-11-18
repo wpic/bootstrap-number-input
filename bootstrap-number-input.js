@@ -26,7 +26,8 @@
 
 		var settings = $.extend({
 			upClass: 'default',
-			downClass: 'default'
+			downClass: 'default',
+			center: true
 			}, options );
 
 		return this.each(function(e) {
@@ -54,6 +55,9 @@
 			});
 			$("<span class='input-group-btn'></span>").append(down).appendTo(group);
 			clone.appendTo(group);
+			if(clone) {
+				clone.css('text-align', 'center');
+			}
 			$("<span class='input-group-btn'></span>").append(up).appendTo(group);
 
 			// remove spins from original
@@ -67,12 +71,12 @@
 					e.preventDefault();
 				}
 
-									var c = String.fromCharCode(e.which);
-					var n = parseInt(clone.val() + c);
+				var c = String.fromCharCode(e.which);
+				var n = parseInt(clone.val() + c);
 
-					if((min && n < min) || (max && n > max)) {
-						e.preventDefault();
-					}
+				if((min && n < min) || (max && n > max)) {
+					e.preventDefault();
+				}
 			});
 
 			self.replaceWith(group);
