@@ -22,7 +22,7 @@
 
 (function ( $ ) {
 
-	$.fn.bootstrapSpin = function( options ) {
+	$.fn.bootstrapNumber = function( options ) {
 
 		var settings = $.extend({
 			upClass: 'default',
