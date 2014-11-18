@@ -47,7 +47,7 @@
 			}
 
 			var group = $("<div class='input-group'></div>");
-			var down = $("<button type='button'>-</button>").attr('class', 'btn btn-' + settings.upClass).click(function() {
+			var down = $("<button type='button'>-</button>").attr('class', 'btn btn-' + settings.downClass).click(function() {
 				setText(parseInt(clone.val()) - 1);
 			});
 			var up = $("<button type='button'>+</button>").attr('class', 'btn btn-' + settings.upClass).click(function() {
