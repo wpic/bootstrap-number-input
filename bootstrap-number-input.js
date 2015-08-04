@@ -7,7 +7,7 @@
  *
  * ========================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use this file except in compliance with the License.t
  * You may obtain a copy of the License at
  *
  *     http://www.apache.org/licenses/LICENSE-2.0
@@ -42,7 +42,7 @@
 					return false;
 				}
 
-				clone.val(n);
+				clone.focus().val(n);
 				return true;
 			}
 
@@ -61,7 +61,7 @@
 			$("<span class='input-group-btn'></span>").append(up).appendTo(group);
 
 			// remove spins from original
-			clone.attr('type', 'text').keydown(function (e) {
+			clone.prop('type', 'text').keydown(function (e) {
 				if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
 					(e.keyCode == 65 && e.ctrlKey === true) || 
 					(e.keyCode >= 35 && e.keyCode <= 39)) {
