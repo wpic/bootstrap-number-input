@@ -34,7 +34,7 @@
 
 		return this.each(function(e) {
 			var self = $(this);
-			var clone = self.clone();
+			var clone = self.clone(true, true);
 
 			var min = self.attr('min');
 			var max = self.attr('max');
